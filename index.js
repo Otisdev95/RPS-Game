@@ -20,20 +20,20 @@ function computerTurn () {
     const randNum = Math.floor(Math.random() * 3) + 1;
     switch (randNum) {
         case 1:
-            player = "ROCK";
+            computer = "ROCK";
             break;
         case 2:
             computer = "PAPER";
             break;
         case 3:
-            result = "SCISSORS";
+            computer = "SCISSORS";
             break;
     }
 }
 
 function checkWinner () {
     if (player == computer) {
-        return "DRAW!"
+        return "DRAW!";
     }
     else if (computer == "ROCK") {
         return (player == "PAPER") ? "YOU WIN!" : "YOU LOSE!";
